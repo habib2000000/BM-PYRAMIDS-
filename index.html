@@ -90,6 +90,28 @@ async function syncCosmicIntelligence() {
 
 // تفعيل الإدراك عند الدخول
 window.onload = syncCosmicIntelligence;
+<script>
+// بروتوكول حماية الخزانة وتفعيل التفاعل
+function activateAICore() {
+    const aiPlanet = document.querySelector('[onclick*="AI CBECB"]');
+    if(aiPlanet) {
+        aiPlanet.onclick = function() {
+            // إخفاء الرصيد وتحويله لرسالة غامضة
+            const secretBalance = "•••• Pi"; 
+            
+            const message = `اهلا بك أيها الرائد في مركز الإدراك.\n` +
+                          `حالة المحفظة: محميّة ببروتوكول الإمبراطور.\n` +
+                          `قوتك المالية: هائلة ومخفية عن العامة.`;
+            
+            alert(message);
+            console.log("تم تفعيل وضع الخصوصية للإمبراطور.");
+        };
+    }
+}
+
+// تشغيل البروتوكول عند تحميل المجرة
+window.addEventListener('load', activateAICore);
+</script>
 
 </body>
 </html>
